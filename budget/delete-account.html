@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계정 삭제 안내 - 예산가계부</title>
+    <style>
+        :root {
+            --primary-bg: #fbfbfd;
+            --text-main: #1d1d1f;
+            --text-muted: #86868b;
+            --accent: #0066cc;
+            --card-bg: #ffffff;
+            --danger: #ff3b30;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 52px;
+            background: rgba(251, 251, 253, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-content {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .back-link {
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-main);
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 140px 20px 80px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .content-box {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: #434347;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .step-box {
+            background: #f5f5f7;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .step-box ol {
+            padding-left: 20px;
+        }
+
+        .step-box li {
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+
+        .danger-text {
+            color: var(--danger);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #f5f5f7;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #d2d2d7;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 24px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #a1a1a6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 내비게이션 바 -->
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="back-link">← 홈으로 돌아가기</a>
+            <div style="font-weight: 600;">예산가계부</div>
+        </div>
+    </nav>
+
+    <!-- 계정 삭제 안내 본문 -->
+    <main class="container">
+        <h1>계정 삭제 및 데이터 파기 안내</h1>
+        <div class="subtitle">예산가계부 서비스 탈퇴 및 데이터 삭제 방법에 대한 안내입니다.</div>
+
+        <div class="content-box">
+            <h2>1. 앱 내에서 직접 계정 삭제하기 (권장)</h2>
+            <p>예산가계부 앱을 이용 중이시라면, 앱 내 설정 메뉴를 통해 간편하게 계정을 삭제하고 모든 데이터를 즉시 영구 삭제할 수 있습니다.</p>
+            
+            <div class="step-box">
+                <ol>
+                    <li>예산가계부 앱 실행</li>
+                    <li>우측 상단 <strong>설정 (톱니바퀴 아이콘)</strong> 또는 프로필 메뉴 이동</li>
+                    <li><strong>'계정 관리'</strong> 또는 <strong>'회원 탈퇴'</strong> 선택</li>
+                    <li>안내 사항 확인 후 <strong>'계정 영구 삭제'</strong> 버튼 터치</li>
+                </ol>
+            </div>
+            <p class="danger-text">※ 계정이 삭제되면 복구가 불가능하며, 클라우드에 저장된 모든 가계부 데이터와 내역이 즉시 파기됩니다.</p>
+
+            <h2>2. 웹에서 계정 삭제(탈퇴) 요청하기</h2>
+            <p>만약 앱을 삭제했거나 앱 내 접근이 불가능한 경우, 아래의 고객지원 채널을 통해 계정 삭제를 요청하실 수 있습니다.</p>
+            <ul>
+                <li><strong>요청 방법:</strong> <a href="contact.html">문의하기 페이지</a>로 이동하여 가입하신 이메일 주소와 함께 "계정 삭제 요청" 메세지를 남겨주세요.</li>
+                <li><strong>처리 기간:</strong> 요청 접수 후 본인 확인 절차를 거쳐 영업일 기준 3일 이내에 계정 및 관련 데이터를 완전히 삭제합니다.</li>
+            </ul>
+
+            <h2>3. 삭제되는 데이터 항목</h2>
+            <p>계정 삭제 시 회사의 서버(Firebase Firestore)에 저장된 아래의 모든 정보가 지체 없이 파기됩니다.</p>
+            <ul>
+                <li>사용자 계정 정보 (이메일, 고유 식별자 UID)</li>
+                <li>카테고리별 예산 설정 데이터</li>
+                <li>수입 및 지출 내역 전체</li>
+                <li>헌금, 부채, 비상금 관련 트랜잭션 기록</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-links">
+            <a href="terms.html">이용약관</a>
+            <a href="privacy.html">개인정보처리방침</a>
+            <a href="delete-account.html">계정 삭제 안내</a>
+            <a href="contact.html">문의 및 지원</a>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Waymaker. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
